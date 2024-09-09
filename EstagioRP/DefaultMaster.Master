@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="DefaultMaster.master.cs" Inherits="EstagioRP.DefaultMaster" %>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Marcos Rocha - Estágio Ribeirão Preto</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <link rel="stylesheet" href="theme/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="theme/css/templatemo-style.css" />
+
+    <asp:ContentPlaceHolder ID="Head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+
+<body>
+
+    <form id="form1" runat="server">
+        <div class="tm-page-container mx-auto">
+            <header class="tm-header text-center">
+                <h1 class="tm-title text-uppercase">Marcos Rocha </h1>
+                <p class="tm-primary-color"><i>Candidato - Estágio  Ribeirão Preto</i></p>
+                <p><a href="https://infobcdev.com.br" target="_blank">Ver Mais</a></p>
+            </header>
+
+            <section class="tm-section">
+                <nav class="tm-nav">
+                    <ul>
+                        <li id="menu-questao1">
+                            <a href="Questao1.aspx"><span class="tm-nav-deco"></span>Questão 1</a>
+                        </li>
+                        <li id="menu-questao2">
+                            <a href="Questao2.aspx"><span class="tm-nav-deco"></span>Questão 2</a>
+                        </li>
+                        <li id="menu-questao3">
+                            <a href="Questao3.aspx"><span class="tm-nav-deco"></span>Questão 3</a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+
+                <asp:ContentPlaceHolder ID="ContentMain" runat="server">
+                </asp:ContentPlaceHolder>
+            </section>
+        </div>
+
+
+    </form>
+
+
+    <asp:ContentPlaceHolder ID="Scripts" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+</html>
